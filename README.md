@@ -59,18 +59,18 @@ import SREasyConstraint
         [imageView, descriptionLabel, button].addAsSubviewTo(view)
 
         imageView.applyConstraint(withConstraintType: .top, relatedBy: .equal, toItem: view, withAttribute: .top, multiplier: 1, constant: 0)
-        imageView.applyConstraint(withConstraintType: .centerX, relatedBy: .equal, toItem: view, withAttribute: .centerX, multiplier: 1, constant: 0)
-        imageView.applyConstraint(withConstraintType: .width, relatedBy: .equal, toItem: view, withAttribute: .width, multiplier: 1, constant: 0)
-        imageView.applyConstraint(withConstraintType: .height, relatedBy: .equal, toItem: imageView, withAttribute: .width, multiplier: 9 / 16, constant: 0)
+        .applyConstraint(withConstraintType: .centerX, relatedBy: .equal, toItem: view, withAttribute: .centerX, multiplier: 1, constant: 0)
+        .applyConstraint(withConstraintType: .width, relatedBy: .equal, toItem: view, withAttribute: .width, multiplier: 1, constant: 0)
+        .applyConstraint(withConstraintType: .height, relatedBy: .equal, toItem: imageView, withAttribute: .width, multiplier: 9 / 16, constant: 0)
 
         descriptionLabel.applyConstraint(withConstraintType: .top, relatedBy: .equal, toItem: imageView, withAttribute: .bottom, multiplier: 1, constant: 16)
-        descriptionLabel.applyConstraint(withConstraintType: .centerX, relatedBy: .equal, toItem: view, withAttribute: .centerX, multiplier: 1, constant: 0)
-        descriptionLabel.applyConstraint(withConstraintType: .width, relatedBy: .equal, toItem: view, withAttribute: .width, multiplier: 0.9, constant: 0)
+        .applyConstraint(withConstraintType: .centerX, relatedBy: .equal, toItem: view, withAttribute: .centerX, multiplier: 1, constant: 0)
+        .applyConstraint(withConstraintType: .width, relatedBy: .equal, toItem: view, withAttribute: .width, multiplier: 0.9, constant: 0)
 
         button.applyConstraint(withConstraintType: .centerX, relatedBy: .equal, toItem: view, withAttribute: .centerX, multiplier: 1, constant: 0)
-        button.applyConstraint(withConstraintType: .width, relatedBy: .equal, toItem: view, withAttribute: .width, multiplier: 0.9, constant: 0)
-        button.applyConstraint(withConstraintType: .bottom, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, withAttribute: .bottom, multiplier: 1, constant: -16)
-        button.applyConstraint(withConstraintType: .height, relatedBy: .equal, toItem: nil, withAttribute: .notAnAttribute, multiplier: 1, constant: 48)
+        .applyConstraint(withConstraintType: .width, relatedBy: .equal, toItem: view, withAttribute: .width, multiplier: 0.9, constant: 0)
+        .applyConstraint(withConstraintType: .bottom, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, withAttribute: .bottom, multiplier: 1, constant: -16)
+        .applyConstraint(withConstraintType: .height, relatedBy: .equal, toItem: nil, withAttribute: .notAnAttribute, multiplier: 1, constant: 48)
 ```
 
 ## Example
