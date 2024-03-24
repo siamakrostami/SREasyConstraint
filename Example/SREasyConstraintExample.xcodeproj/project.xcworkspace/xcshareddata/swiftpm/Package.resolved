@@ -1,0 +1,15 @@
+{
+  "originHash" : "d296f2af42301789e36e78fe5e3f7ef99aaeabcb8e1317922684290e73fca017",
+  "pins" : [
+    {
+      "identity" : "sreasyconstraint",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/siamakrostami/SREasyConstraint",
+      "state" : {
+        "revision" : "1d71977e6352096e6a8fabd4295de2e3bc9c19c2",
+        "version" : "0.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
