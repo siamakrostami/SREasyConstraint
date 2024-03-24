@@ -90,7 +90,7 @@ public extension UIView {
     }
 }
 
-extension Array where Element: UIView {
+public extension Array where Element: UIView {
     /// Add current views as subview to their parent view
     /// - Parameter view: parent view
     /// - Returns: Self
